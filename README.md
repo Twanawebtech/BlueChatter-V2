@@ -217,21 +217,22 @@ $ create-service rediscloud 30mb redis-chatter
 #### Steps to be done on Bluemix UI
 Now we need to switch over to Bluemix UI and complete the steps required to have our docker image running inside a private docker container repository on Bluemix.
 
-1. Go over [Bluemix catalog container](https://console.ng.bluemix.net/catalog/?taxonomyNavigation=apps&category=containerImages) area and click on the "bluechatter" registry that we created. ![Application Diagram](ReadMeImages/registry.png)
+Step 1) Go over [Bluemix catalog container](https://console.ng.bluemix.net/catalog/?taxonomyNavigation=apps&category=containerImages) area and click on the "bluechatter" registry that we created. ![Application Diagram](ReadMeImages/registry.png)
 
-1. You have the option to create single or scalable container, in our case we will select the scalable container option to take the full advantage of the scaling capabilities.   
+Step 2) You have the option to create single or scalable container, in our case we will select the scalable container option to take the full advantage of the scaling capabilities.   
 Here are the items you need to select to create the container:  
-1) Select the scalable option for container type  
-2) Give your container a name, I named my container bluechatterContainerGroup  
-3) Select a container size, I selected Nano 128MB 8GB Storage for this example but you can select the size in which best for your setup.
-4) Select number of instances, I selected 3 instances  
-5) Host leave it as default  
-6) HTTP Port should be 80 and enable automatic recovery option if you wish.  
-7) Last and most important step, bind the Redis service to the container, to do this, click on the **"Advanced Options"** button then scroll down to select and **add** the Redis service.  
-8) Click on the Create button.
+- Select the scalable option for container type  
+- Give your container a name, I named my container bluechatterContainerGroup  
+- Select a container size, I selected Nano 128MB 8GB Storage for this example but you can select the size in which best for your setup.
+- Select number of instances, I selected 3 instances  
+- Host leave it as default  
+- HTTP Port should be 80 and enable automatic recovery option if you wish.  
+- Last and most important step, bind the Redis service to the container, to do this, click on the **"Advanced Options"** button then scroll down to select and **add** the Redis service.  
+- Click on the Create button.
 ![Application Diagram](ReadMeImages/configuration.png)
 
-3. **Done,** with above steps completed, you should have your container running within 2-3 mins.  
+
+**Done,** with above steps completed, you should have your container running within 2-3 mins.  
 Looking at my container screenshot below, we can quickly see everything we need to know about our docker container.  
 Note, a staging domain also been created for us with the name of the container group.  
 ![Application Diagram](ReadMeImages/containers.png)
@@ -263,8 +264,8 @@ The Bluemix containers services offers a vulnerability report to each one of the
 To get to the vulnerability advisor section, from your container dashboard click on any of the container instances and then you should see the vulnerability advisor button on the bottom of the page.   
 ![Application Diagram](ReadMeImages/Vulnerability01.png)
 
-Looking at the vulnerability advisor section, we can get things like policy violations, vulnerable packages, best practice improvements and security misconfigurations.
-The two parts that I find very useful would be the vulnerable packages and best practice improvements.
+Looking at the vulnerability advisor section, we can get things like policy violations, vulnerable packages, best practice improvements and security misconfigurations.  
+The two parts that I find very useful would be the vulnerable packages and best practice improvements.  
 From the list of best practices improvements, I can understand things like weak passwords, list Malware found, permission settings and more.
 ![Application Diagram](ReadMeImages/Vulnerability02.png)
 
