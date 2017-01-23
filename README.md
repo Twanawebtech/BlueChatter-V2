@@ -31,8 +31,9 @@ The other servers then get notifications of the new messages and notify their cl
 
 ## Automatically Deploying To Bluemix
 
-The easiest way to deploy BlueChatter is to click the "Deploy to Bluemix" button in which automatically deploys the application to Bluemix.
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/bluechatter)
+The easiest way to deploy BlueChatter is to click the "Deploy to Bluemix" button in which automatically deploys the application to Bluemix.  
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/bluechatter)  
+
 
 Using the Deploy To Bluemix button will automatically setup several things for you.  
 First it will create a Git repo in IBM DevOps Services containing the code for the application.
@@ -268,20 +269,20 @@ From the list of best practices improvements, I can understand things like weak 
 ![Application Diagram](ReadMeImages/Vulnerability02.png)
 
 ### 2.7 Why I love using Docker on Bluemix?
-1. Quick and easy deployment, you can deploy your docker application to Bluemix within less then 5 minutes.
-1. List of IBM provided docker images and ability to use any other docker images like for example any image from [Docker Hub](https://hub.docker.com/).  
-1. Really nice and easy scaling capabilities to do manual or automatic scaling
-1. Easy monitoring and logging dashboard  
-1. Vulnerability Advisor Dashboard
-1. Good documentation support on Docker
+- Quick and easy deployment, you can deploy your docker application to Bluemix within less then 5 minutes.
+- List of IBM provided docker images and ability to use any other docker images like for example any image from [Docker Hub](https://hub.docker.com/).  
+- Really nice and easy scaling capabilities to do manual or automatic scaling
+- Easy monitoring and logging dashboard  
+- Vulnerability Advisor Dashboard
+- Good documentation support on Docker
 
 
-For additional information about on IBM Containers see the the following links:
-[Bluemix documentation](https://console.ng.bluemix.net/docs/containers/container_index.html).
-[A-Z Video docker container setup](https://www.youtube.com/watch?v=TfCj2qOXb1g).
+For additional information about on IBM Containers see the the following links:  
+[Bluemix documentation](https://console.ng.bluemix.net/docs/containers/container_index.html)  
+[A-Z Video docker container setup](https://www.youtube.com/watch?v=TfCj2qOXb1g)  
 
 
-## 3.0 Testing
+## Testing
 After the app is deployed you can test it by opening two different browsers
 and navigating to the URL of the app.  YOU MUST USE TWO DIFFERENT BROWSERS
 AND NOT TWO TABS IN THE SAME BROWSER.  Since we are using long polling
