@@ -63,19 +63,16 @@ registry on Bluemix so you can deploy additional containers based on that image 
 1. If you have not already, [download node.js 6.7.0 or later][https://nodejs.org/download/] and install it on your local machine.
 
 1. Clone the app to your local environment from your terminal using the following command
-
   ```
   git clone https://github.com/IBM-Bluemix/bluechatter.git
   ```
 
 1. `cd` into the `bluechatter` folder that you cloned
-
   ```
   cd bluechatter
   ```
 
-1. Edit the `manifest.yml` file and change the application `host` to something unique.  
-The host you use will determinate your application url initially, e.g. `<host>.mybluemix.net`.
+1. Edit the `manifest.yml` file and change the application `host` to something unique. The host you use will determinate your application url initially, e.g. `<host>.mybluemix.net`.
 
 1. Connect and login to Bluemix
 ```
