@@ -74,9 +74,8 @@ registry on Bluemix so you can deploy additional containers based on that image 
   cd bluechatter
   ```
 
-1. Edit the `manifest.yml` file and change the application `host` to something unique.
-
-  The host you use will determinate your application url initially, e.g. `<host>.mybluemix.net`.
+1. Edit the `manifest.yml` file and change the application `host` to something unique.  
+The host you use will determinate your application url initially, e.g. `<host>.mybluemix.net`.
 
 1. Connect and login to Bluemix
 ```
@@ -101,12 +100,12 @@ cf push
 Since we are using Redis to send chat messages, you can scale this application as much as you would like and people can be connecting to various servers and still receive chat messages.  We will be looking on how to scale the application runtime instances for when needed, to do this we are going to look at the manual scaling command or use the Auto-Scaling service to automatically increase or decrease the number of application instances based on a policy we set it.
 
 #### Manual Scaling
-1. Manually scale the application to run 3 instances
+- Manually scale the application to run 3 instances
 ```
 $ cf scale my-blue-chatter-app-name -i 3
 ```
 
-1. Then check your that all your instances are up and running.
+- Then check your that all your instances are up and running.
 ```
  $ cf app my-blue-chatter-app-name
 ```
@@ -116,7 +115,7 @@ If you have more than one instance running chances are the instance id will be d
 
 
 #### Auto Scaling
-1. It's good to be able to manually scale your application but Manual scaling wont work for many cases, for that reason we need to setup a [Auto-Scaling](https://console.ng.bluemix.net/docs/services/Auto-Scaling/index.html) to automatically scale our application for when needed.
+- It's good to be able to manually scale your application but Manual scaling wont work for many cases, for that reason we need to setup a [Auto-Scaling](https://console.ng.bluemix.net/docs/services/Auto-Scaling/index.html) to automatically scale our application for when needed.
 To learn more on Auto-Scaling checkout the blog post [Handle the Unexpected with Bluemix Auto-Scaling](https://www.ibm.com/blogs/bluemix/2015/04/handle-unexpected-bluemix-auto-scaling/) for detailed descreption on [Auto-Scaling](https://console.ng.bluemix.net/docs/services/Auto-Scaling/index.html).
 
 
@@ -161,7 +160,7 @@ $ docker-compose up
 
 **Done,** now go to [http://localhost](http://localhost) to see your app running if you are on a Mac Linux.   
 
-1. On Windows you will need the IP address of your Docker Machine VM to test the application.
+- On Windows you will need the IP address of your Docker Machine VM to test the application.
 Run the following command, replacing `machine-name` with the name of your Docker Machine.
 ```
 $ docker-machine ip machine-name
