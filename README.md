@@ -85,9 +85,9 @@ registry on Bluemix so you can deploy additional containers based on that image 
   ```
 
 1. Push the application
-```
-cf push
-```
+  ```
+  cf push
+  ```
 
 **Done**, now go to the staging domain(`<host>.mybluemix.net`.) and see your app running.
 
@@ -97,15 +97,15 @@ cf push
 Since we are using Redis to send chat messages, you can scale this application as much as you would like and people can be connecting to various servers and still receive chat messages.  We will be looking on how to scale the application runtime instances for when needed, to do this we are going to look at the manual scaling command or use the Auto-Scaling service to automatically increase or decrease the number of application instances based on a policy we set it.
 
 #### Manual Scaling
-- Manually scale the application to run 3 instances
-```
-$ cf scale my-blue-chatter-app-name -i 3
-```
+1. Manually scale the application to run 3 instances
+  ```
+  $ cf scale my-blue-chatter-app-name -i 3
+  ```
 
-- Then check your that all your instances are up and running.
-```
- $ cf app my-blue-chatter-app-name
-```
+1. Then check your that all your instances are up and running.
+  ```
+   $ cf app my-blue-chatter-app-name
+  ```
 Now switch over to your staging domain(`<host>.mybluemix.net`.) to see your running application.
 Note, you can see see which instance you are connecting to in the footer of the application.  
 If you have more than one instance running chances are the instance id will be different between two different browsers.  
@@ -146,14 +146,14 @@ We will then look on how to scale your docker container on Bluemix to scale your
 ### 2.2 Build & run container locally
 
 1. Build your docker container
-```
-$ docker-compose build
-```
+  ```
+  $ docker-compose build
+  ```
 
 2. Start your docker container
-```
-$ docker-compose up
-```
+  ```
+  $ docker-compose up
+  ```
 
 **Done,** now go to [http://localhost](http://localhost) to see your app running if you are on a Mac Linux.   
 
