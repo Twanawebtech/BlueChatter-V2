@@ -58,33 +58,33 @@ registry on Bluemix so you can deploy additional containers based on that image 
 1. Create a Bluemix Account  
 [Signup](https://console.ng.bluemix.net/registration/?target=%2Fdashboard%2Fapps) for Bluemix, or use an existing account.
 
-1. Download and install the [Cloud-foundry CLI](https://github.com/cloudfoundry/cli) tool
+2. Download and install the [Cloud-foundry CLI](https://github.com/cloudfoundry/cli) tool
 
-1. If you have not already, [download node.js 6.7.0 or later][https://nodejs.org/download/] and install it on your local machine.
+3. If you have not already, [download node.js 6.7.0 or later][https://nodejs.org/download/] and install it on your local machine.
 
-1. Clone the app to your local environment from your terminal using the following command
+4. Clone the app to your local environment from your terminal using the following command
   ```
   git clone https://github.com/IBM-Bluemix/bluechatter.git
   ```
 
-1. `cd` into the `bluechatter` folder that you cloned
+5. `cd` into the `bluechatter` folder that you cloned
   ```
   cd bluechatter
   ```
 
-1. Edit the `manifest.yml` file and change the application `host` to something unique. The host you use will determinate your application url initially, e.g. `<host>.mybluemix.net`.
+6. Edit the `manifest.yml` file and change the application `host` to something unique. The host you use will determinate your application url initially, e.g. `<host>.mybluemix.net`.
 
-1. Connect and login to Bluemix
+7. Connect and login to Bluemix
 ```
 $ cf login -a https://api.ng.bluemix.net
 ```
 
-1. create a Redis service for the app to use, we will use the RedisCloud service.
+8. Create a Redis service for the app to use, we will use the RedisCloud service.
 ```
 $ cf create-service rediscloud 30mb redis-chatter
 ```
 
-1. Push the application
+9. Push the application
 ```
 cf push
 ```
