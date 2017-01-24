@@ -172,34 +172,35 @@ Before running the container on Bluemix, I recommend you to checkout the Docker 
 1. Download and install the [Cloud-foundry CLI](https://github.com/cloudfoundry/cli) tool if haven't already.
 
 1. Install the IBM Bluemix Container Service plug-in to execute commands to IBM Bluemix containers from your terminal window. Install Container Service plug-in by running this command if on OS X.
-```
-$ cf install-plugin https://static-ice.ng.bluemix.net/ibm-containers-mac
-```
+  ```
+  $ cf install-plugin https://static-ice.ng.bluemix.net/ibm-containers-mac
+  ```
 If you are on Linux or windows then find the [installation command here](https://console.ng.bluemix.net/docs/containers/container_cli_cfic_install.html)
 
 1. Login to Bluemix with your Bluemix email and password
-```
-$ cf login -a api.ng.bluemix.net
-```
+  ```
+  $ cf login -a api.ng.bluemix.net
+  ```
 
 1. Login to the IBM Containers plugin to work with your docker images that are on Bluemix
-```
-$ cf ic login
-```
+  ```
+  $ cf ic login
+  ```
 
 1. After you have logged in you can build an image for the BlueChatter application on Bluemix.
 From the root of BlueChatter application run the following commnand replacing namespace
 with your namespace for the IBM Containers service.  (If you don't know what your namespace is
 run `$ cf ic namespace get`.)
-```
-$ cf ic build -t namespace/bluechatter ./
-```
-The above `build` command will push the code for Bluechatter to the IBM Containers Docker service
-and run a `docker build` on that code.  Once the build finishes the resulting image will be
-deployed to your Docker registry on Bluemix.  You can verify this by running
-```
-$ cf ic images
-```
+  ```
+  $ cf ic build -t namespace/bluechatter ./
+  ```
+
+  The above `build` command will push the code for Bluechatter to the IBM Containers Docker service
+  and run a `docker build` on that code.  Once the build finishes the resulting image will be
+  deployed to your Docker registry on Bluemix.  You can verify this by running
+  ```
+  $ cf ic images
+  ```
 You should see a new image with the tag `namespace/bluechatter` listed in the images available to you.
 You can also verify this by going to the [catalog](https://console.ng.bluemix.net/catalog/) on Bluemix,
 in the containers section you should see the BlueChatter image listed.
@@ -207,9 +208,9 @@ in the containers section you should see the BlueChatter image listed.
 1. Our BlueChatter application is using the Redis cloud service to store in memory the chat communication, lets go ahead and great the Redis service.
 We can create a service on Bluemix using the Bluemix UI or the terminal using the command below.
 Enter this command in your terminal to create the Redis service:
-```
-$ create-service rediscloud 30mb redis-chatter
-```
+  ```
+  $ create-service rediscloud 30mb redis-chatter
+  ```
 
 
 #### Steps to be done on Bluemix UI
