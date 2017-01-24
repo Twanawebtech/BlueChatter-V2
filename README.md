@@ -153,7 +153,7 @@ We will then look on how to scale your docker container on Bluemix to scale your
 $ docker-compose build
 ```
 
-1. Start your docker container
+2. Start your docker container
 ```
 $ docker-compose up
 ```
@@ -174,24 +174,23 @@ Before running the container on Bluemix, I recommend you to checkout the Docker 
 
 1. Download and install the [Cloud-foundry CLI](https://github.com/cloudfoundry/cli) tool if haven't already.
 
-2. Install the IBM Bluemix Container Service plug-in to execute commands to IBM Bluemix containers from your terminal window.
-Install Container Service plug-in by running this command if on OS X.
+1. Install the IBM Bluemix Container Service plug-in to execute commands to IBM Bluemix containers from your terminal window. Install Container Service plug-in by running this command if on OS X.
 ```
 $ cf install-plugin https://static-ice.ng.bluemix.net/ibm-containers-mac
 ```
 If you are on Linux or windows then find the [installation command here](https://console.ng.bluemix.net/docs/containers/container_cli_cfic_install.html)
 
-3. Login to Bluemix with your Bluemix email and password
+1. Login to Bluemix with your Bluemix email and password
 ```
 $ cf login -a api.ng.bluemix.net
 ```
 
-4. Login to the IBM Containers plugin to work with your docker images that are on Bluemix
+1. Login to the IBM Containers plugin to work with your docker images that are on Bluemix
 ```
 $ cf ic login
 ```
 
-5. After you have logged in you can build an image for the BlueChatter application on Bluemix.
+1. After you have logged in you can build an image for the BlueChatter application on Bluemix.
 From the root of BlueChatter application run the following commnand replacing namespace
 with your namespace for the IBM Containers service.  (If you don't know what your namespace is
 run `$ cf ic namespace get`.)
@@ -208,7 +207,7 @@ You should see a new image with the tag `namespace/bluechatter` listed in the im
 You can also verify this by going to the [catalog](https://console.ng.bluemix.net/catalog/) on Bluemix,
 in the containers section you should see the BlueChatter image listed.
 
-6. Our BlueChatter application is using the Redis cloud service to store in memory the chat communication, lets go ahead and great the Redis service.
+1. Our BlueChatter application is using the Redis cloud service to store in memory the chat communication, lets go ahead and great the Redis service.
 We can create a service on Bluemix using the Bluemix UI or the terminal using the command below.
 Enter this command in your terminal to create the Redis service:
 ```
@@ -219,9 +218,9 @@ $ create-service rediscloud 30mb redis-chatter
 #### Steps to be done on Bluemix UI
 Now we need to switch over to Bluemix UI and complete the steps required to have our docker image running inside a private docker container repository on Bluemix.
 
-Step 1) Go over [Bluemix catalog container](https://console.ng.bluemix.net/catalog/?taxonomyNavigation=apps&category=containerImages) area and click on the "bluechatter" registry that we created. ![Application Diagram](ReadMeImages/registry.png)
+**Step 1)** Go over [Bluemix catalog container](https://console.ng.bluemix.net/catalog/?taxonomyNavigation=apps&category=containerImages) area and click on the "bluechatter" registry that we created. ![Application Diagram](ReadMeImages/registry.png)
 
-Step 2) You have the option to create single or scalable container, in our case we will select the scalable container option to take the full advantage of the scaling capabilities.   
+**Step 2)** You have the option to create single or scalable container, in our case we will select the scalable container option to take the full advantage of the scaling capabilities.   
 Here are the items you need to select to create the container:  
 - Select the scalable option for container type  
 - Give your container a name, I named my container bluechatterContainerGroup  
