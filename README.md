@@ -270,7 +270,7 @@ The two parts that I find very useful would be the vulnerable packages and best 
 From the list of best practices improvements, I can understand things like weak passwords, list Malware found, permission settings and more.
 ![Application Diagram](ReadMeImages/Vulnerability02.png)
 
-### 2.7 Why I love working Docker on Bluemix?
+### 2.7 Why I love working with Docker Containers on Bluemix?
 - Quick and easy deployment, you can deploy your docker application to Bluemix within less then 5 minutes.
 - List of IBM provided docker images and ability to use any other docker images like for example any image from [Docker Hub](https://hub.docker.com/).  
 - Really nice and easy scaling capabilities to do manual or automatic scaling
