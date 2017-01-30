@@ -87,7 +87,7 @@ registry on Bluemix so you can deploy additional containers based on that image 
 
 
 
-1.0 Cloud Foundry Deployment Approach
+1. Cloud Foundry Deployment Approach
 =====================================
 
 1. Create a Bluemix Account  
@@ -156,7 +156,7 @@ Auto Scaling
 To learn more on Auto-Scaling checkout the blog post [Handle the Unexpected with Bluemix Auto-Scaling](https://www.ibm.com/blogs/bluemix/2015/04/handle-unexpected-bluemix-auto-scaling/) for detailed descreption on [Auto-Scaling](https://console.ng.bluemix.net/docs/services/Auto-Scaling/index.html).
 
 
-2.0 Docker Deployment Approach
+2. Docker Deployment Approach
 ==============================
 
 Here we are going to look on how to deploy the BlueChatter application on a Docker container where it will be running on IBM Bluemix.
