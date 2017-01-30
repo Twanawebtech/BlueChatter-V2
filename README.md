@@ -12,9 +12,9 @@ See how the browser chat application will looks like:
 Table of contents
 =================
 
-  * [BlueChatter Overview](#BlueChatter-Overview)
+  * [BlueChatter Overview](#blueChatter-overview)
   * [Table of contents](#table-of-contents)
-  * [Target Users](#Target-Users)
+  * [Target Users](#target-Users)
   * [Technologies Used](#Technologies-Used)
   * [Auto Deploy To Bluemix](#Auto-Deploy-To-Bluemix)
   * [1.0 Cloud Foundry Deployment Approach](#1.0-Cloud-Foundry-Deployment-Approach)
@@ -29,7 +29,7 @@ Table of contents
     * [2.6 Vulnerability Advisor](#2.6-Vulnerability-Advisor)
     * [2.7 Why use Docker Containers on Bluemix?](#2.7-Why-use-Docker-Containers-on-Bluemix?)
   * [Testing](#Testing)
-  * [License](#License)
+  * [License](#license)
   * [Dependencies](#Dependencies)
 
 
