@@ -17,13 +17,13 @@ Table of contents
   * [Target Users](#target-users)
   * [Technologies Used](#technologies-used)
   * [Auto Deploy To Bluemix](#auto-deploy-to-bluemix)
-  * [1.0 Cloud Foundry Deployment Approach](#cloud-foundry-deployment-approach)
+  * [1.0 Cloud Foundry Deployment Approach](#1-cloud-foundry-deployment-approach)
     * [1.1 Scaling Your Cloud Foundry Application](#scaling-your-cloud-foundry-application)
       * [Manual Scaling](#manual-scaling)
       * [Auto Scaling](#auto-scaling)
-  * [2.0 Docker Deployment Approach](#docker-deployment-approach)
-    * [2.1 Setup](#setup)
-    * [2.2 Build & run container locally](#build-&-run-container-locally)
+  * [2.0 Docker Deployment Approach](#2-docker-deployment-approach)
+    * [2.1 Setup](#2_1-setup)
+    * [2.2 Build & run container locally](#2_2-build-&-run-container-locally)
     * [2.3 Run container on Bluemix](#run-container-on-bluemix)
     * [2.4 Container Scaling](#container-scaling)
     * [2.6 Vulnerability Advisor](#vulnerability-advisor)
@@ -87,7 +87,7 @@ registry on Bluemix so you can deploy additional containers based on that image 
 
 
 
-Cloud Foundry Deployment Approach
+1 Cloud Foundry Deployment Approach
 =================================
 
 1. Create a Bluemix Account  
@@ -156,13 +156,13 @@ Auto Scaling
 To learn more on Auto-Scaling checkout the blog post [Handle the Unexpected with Bluemix Auto-Scaling](https://www.ibm.com/blogs/bluemix/2015/04/handle-unexpected-bluemix-auto-scaling/) for detailed descreption on [Auto-Scaling](https://console.ng.bluemix.net/docs/services/Auto-Scaling/index.html).
 
 
-2. Docker Deployment Approach
+2 Docker Deployment Approach
 ==============================
 
 Here we are going to look on how to deploy the BlueChatter application on a Docker container where it will be running on IBM Bluemix.
 We will then look on how to scale your docker container on Bluemix to scale your application where needed. First, lets look at running the BlueChatter application inside a Docker container locally on your machine, next we will deploy the container to Bluemix and then scale it for when needed. Lets get started and have fun.
 
-2.1 Setup
+2_1 Setup
 ---------
 
 1. Create a Bluemix Account  
@@ -192,7 +192,7 @@ We will then look on how to scale your docker container on Bluemix to scale your
   ```
 
 
-2.2 Build & run container locally
+2_2 Build & run container locally
 ---------------------------------
 
 1. Build your docker container
