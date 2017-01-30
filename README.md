@@ -87,8 +87,8 @@ registry on Bluemix so you can deploy additional containers based on that image 
 
 
 
-1. Cloud Foundry Deployment Approach
-=====================================
+Cloud Foundry Deployment Approach
+=================================
 
 1. Create a Bluemix Account  
 [Signup](https://console.ng.bluemix.net/registration/?target=%2Fdashboard%2Fapps) for Bluemix, or use an existing account.
@@ -127,7 +127,7 @@ registry on Bluemix so you can deploy additional containers based on that image 
 **Done**, now go to the staging domain(`<host>.mybluemix.net`.) and see your app running.
 
 
-1.1 Scaling Your Cloud Foundry Application
+Scaling Your Cloud Foundry Application
 ------------------------------------------
 
 Since we are using Redis to send chat messages, you can scale this application as much as you would like and people can be connecting to various servers and still receive chat messages.  We will be looking on how to scale the application runtime instances for when needed, to do this we are going to look at the manual scaling command or use the Auto-Scaling service to automatically increase or decrease the number of application instances based on a policy we set it.
