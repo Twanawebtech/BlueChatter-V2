@@ -24,10 +24,11 @@ Table of contents
   * [2.0 Docker Deployment Approach](#2-docker-deployment-approach)
     * [2.1 Setup](#2_1-setup)
     * [2.2 Build & run container locally](#2_2-build-&-run-container-locally)
-    * [2.3 Run container on Bluemix](#run-container-on-bluemix)
-    * [2.4 Container Scaling](#container-scaling)
-    * [2.6 Vulnerability Advisor](#vulnerability-advisor)
-    * [2.7 Why use Docker Containers on Bluemix?](#why-use-docker-containers-on-bluemix?)
+    * [2.3 Run container on Bluemix](#2_3-run-container-on-bluemix)
+    * [2.4 Container Scaling](#2_4-container-scaling)
+    * [2.5 Reporting](#2_5-reporting)
+    * [2.6 Vulnerability Advisor](#2_6-vulnerability-advisor)
+    * [2.7 Why use Docker Containers on Bluemix?](#2_7-why-use-docker-containers-on-bluemix?)
   * [Testing](#testing)
   * [License](#license)
   * [Dependencies](#dependencies)
@@ -216,7 +217,7 @@ Now that you have the IP go to your favorite browser and enter the IP in the add
 you should see the app come up.  (The app is running on port 80 in the container.)
 
 
-2.3 Run container on Bluemix
+2_3 Run container on Bluemix
 ----------------------------
 
 Before running the container on Bluemix, I recommend you to checkout the Docker container Bluemix documentation to better understand the steps below. Please review the [documentation](https://www.ng.bluemix.net/docs/containers/container_index.html) on Bluemix before continuing.
@@ -289,7 +290,7 @@ Note, a staging domain also been created for us with the name of the container g
 ![Application Diagram](ReadMeImages/containers.png)
 
 
-2.4 Container Scaling
+2_4 Container Scaling
 ---------------------
 
 The Bluemix containers offers a great scaling and reporting functionality where as a developer you really don't need to worry about any of the underlying infrastructure and scaling scripts.
@@ -304,7 +305,7 @@ Done.
 
 With above 4 steps you have created your auto scaling policy to increase the number of container instances for when needed.
 
-2.5 Reporting
+2_5 Reporting
 -------------
 
 First, at a quick look at the container dashboard we can see the usage of your docker container.
@@ -314,7 +315,7 @@ To get more in depth monitoring and reporting, go over to the monitoring and Log
 ![Application Diagram](ReadMeImages/monandlogs.png)
 
 
-2.6 Vulnerability Advisor
+2_6 Vulnerability Advisor
 -------------------------
 
 The Bluemix containers services offers a vulnerability report to each one of the containers deployed to Bluemix, this is highly useful as it provides a deep vulnerability insight to your application.
@@ -326,7 +327,7 @@ The two parts that I find very useful would be the vulnerable packages and best 
 From the list of best practices improvements, I can understand things like weak passwords, list Malware found, permission settings and more.
 ![Application Diagram](ReadMeImages/Vulnerability02.png)
 
-2.7 Why use Docker Containers on Bluemix?
+2_7 Why use Docker Containers on Bluemix?
 ---------------------------------------------------------
 
 - Quick and easy deployment, you can deploy your docker application to Bluemix within less then 5 minutes.
