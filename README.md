@@ -1,8 +1,9 @@
 BlueChatter Overview
 ======================
 
-The BlueChatter app is a simple chat/IRC type application for your browser which allows multiple users to chat when online at the same time. The sample app is used to showcase how to deploy an application to the Cloud using the Cloud Foundry and Docker container approach. The demo demonstrates how quickly you can deploy and scale your Docker container on [IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/). Also, it introduces the tools and services you need for deploying your Docker applications to [IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/).
-
+The BlueChatter app is a simple chat/IRC type application for your browser which allows multiple users to chat when online at the same time. 
+The sample app is used to showcase how to deploy and scale a chat application using Cloud Foundry and Docker container service and Kubernetes approach. 
+The demo demonstrates how quickly you can deploy and scale your application where been it's a Cloud Foundry, Docker Container Service or Kubernetes Cluster. 
 
 See how the browser chat application looks like:
 ![Application Diagram](ReadMeImages/viewapp.png)  
@@ -339,7 +340,7 @@ A Kubernetes service groups a set of pods and provides network connection to the
 [Learn more on these compounds here](https://console.ng.bluemix.net/docs/containers/cs_ov.html#cs_ov)
 
 3_1 Requirements
----------
+----------------
 
 * An IBM Bluemix account. Either [sign up][bluemix_signup_url], or use an existing account.
 * [Bluemix CLI](https://clis.ng.bluemix.net/ui/home.html)
@@ -351,7 +352,7 @@ A Kubernetes service groups a set of pods and provides network connection to the
 
 
 3_2 Build the Docker image
----------
+-------------------------
 1. Clone the app to your local environment from your terminal using the following command
     
     ```
