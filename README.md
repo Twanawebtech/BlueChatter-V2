@@ -34,7 +34,7 @@ Table of contents
     * [3.2 Build the Docker image](#3_2-build-the-docker-image)
     * [3.3 Create a cluster](#3_3-create-a-cluster)
     * [3.4 Deploy the cluster](#3_4-deploy-the-cluster)
-    * [3.5 Cluster Logs and Graphical display pods](#3_5-cluster-logs-and-graphical-display-pods)
+    * [3.5 View Cluster Graphically ](#3_5-view-cluster-graphically)
     * [3.6 Manual Scaling](#3_6-manual-scaling)
     * [3.7 Automatic Scaling](#3_7-automatic-scaling) 
   * [Useful Kubernetes commands](#useful-kubernetes-commands)
