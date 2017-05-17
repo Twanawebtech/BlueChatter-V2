@@ -45,11 +45,11 @@ Table of contents
 
 Learning Objectives
 ===================
-
-- Learn how to deploy, scale and manage a **docker** application using [IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/).  
-- Learn how to deploy, scale and manage a **Cloud Foundry** application using [IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/).  
+- Learn how to deploy and scale **Cloud Foundry** application using [IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/).  
+- Learn how to deploy and scale a **Docker Container** application using [IBM Bluemix Docker service](https://console.ng.bluemix.net/docs/containers/cs_classic.html#cs_classic).  
+- Learn how to deploy and scale a **Kubernetes Cluster** using [IBM Bluemix Kubernetes approach](https://console.ng.bluemix.net/docs/containers/cs_ov.html#cs_ov).  
 - Learn how to create a simple Chat application with NodeJs and Express.  
-- Learn more on the tooling and reporting when working with Docker Containers.  
+- Learn more on the tooling and reporting when working with Docker Containers and Kubernetes clusters. 
 
 
 Technologies Used
